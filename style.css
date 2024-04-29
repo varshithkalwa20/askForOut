@@ -52,6 +52,9 @@
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
   }
+#move-random{
+    margin-left: 115px;
+  }
 
   /* Animation for "please" */
 /* Animation for "please" */

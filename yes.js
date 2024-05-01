@@ -42,4 +42,28 @@ function getRandomPosition() {
       }
     );
   }
+function submitForm() {
+    var form = document.getElementById('confessionForm');
+    var formData = new FormData(form);
+  
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      alert('Same to you'); // Display success message
+      form.reset(); // Reset form fields
+    })
+    .catch(error => {
+      console.error('There was a problem with your submission:', error.message);
+      alert('There was a problem with your submission. Please try again.'); // Display error message
+    });
+  }
+  
   

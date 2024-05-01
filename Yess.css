@@ -24,14 +24,14 @@
     gap: 20px;
     max-width: 500px;
     margin: 20px;
-    margin-top:18%;
+    margin-top: 18%;
     
     
   }
   h1{
     font-family: "Emilys Candy", serif;
     color: #800080;
-    margin-top: 5%;
+    margin-top: 8%;
   }
   
   
@@ -77,4 +77,46 @@
     color:#ff1493;
     animation: moveText 5s linear forwards; /* Adjust duration as needed */
   }
+  
+  
+  .cloud {
+    position: relative; /* Make the container position relative */
+    background-color: #ffffff; /* White background */
+    padding: 10px; /* Decrease padding */
+    border-radius: 15px; /* Decrease border-radius */
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    width: 300px; /* Decrease width */
+    margin: 30px auto; /* Center the container */
+  }
+  
+  ::placeholder {
+    text-align: center;
+    line-height: 5em;
+  }
+  
+  
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Disable resizing of textarea */
+  }
+  
+  button {
+    width: 30%;
+    padding: 10px;
+    background-color: #74d3f0; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green button color on hover */
+  }
+  
   
